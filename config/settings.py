@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'accounts',
     'pages',
     'products',
+    'cart',
 
 ]
 SITE_ID = 1
@@ -79,6 +80,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                # Custom Context Processors
+                'cart.context_processors.cart',
             ],
         },
     },
